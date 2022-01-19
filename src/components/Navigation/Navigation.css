@@ -1,0 +1,30 @@
+li a {
+	color: white;
+	text-decoration: none;
+    cursor: pointer; 
+}
+
+.header,
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header {
+	padding: 0 2em;
+}
+
+.header__nav {
+}
+
+.header__text {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.name-link {
+    font-size: xx-large;
+    color: white; 
+    text-decoration: none;
+}
