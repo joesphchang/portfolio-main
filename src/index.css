@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #292C35;
 }
 
 code {
@@ -19,6 +20,9 @@ code {
     monospace;
 }
 
+li {
+  list-style-type: none;
+}
 
 :root {
   --dark: rgb(65, 65, 65);
