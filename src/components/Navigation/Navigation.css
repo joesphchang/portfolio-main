@@ -1,5 +1,5 @@
 li a {
-	color: white;
+	color: #F9FFFFE5;
 	text-decoration: none;
     cursor: pointer; 
 }
@@ -25,6 +25,26 @@ li a {
 
 .name-link {
     font-size: xx-large;
-    color: white; 
+    color: #F9FFFFE5; 
     text-decoration: none;
+}
+
+
+@media (max-width: 500px) {
+	.name-link {
+	}
+	.header__text {
+		/* border: 2px solid red;  */
+		display: inline-block; 
+	}
+}
+
+@media (max-width: 900px) {
+	.name-link {
+		font-size: larger;
+	}
+	.header__text {
+		/* border: 2px solid red;  */
+		display: inline-block; 
+	}
 }
