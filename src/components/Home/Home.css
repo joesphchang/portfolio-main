@@ -11,7 +11,6 @@
 	color: #f9ffffe5;
     max-width: 770px;
     margin: auto;
-	grid-row: auto;
 }
 
 .home-textbox a {
@@ -27,9 +26,8 @@
 }
 
 .text-box {
-	margin-top: 10px;
 	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 50px;
 	color: #f9ffffe5;
 }
 
@@ -37,13 +35,14 @@
 	border: 1px solid #f9ffffe5;
     margin: auto;
     padding: 15px;
-	grid-area: b;
+	width: 600px;
+	margin-right: 50px;
+	text-align: left;
 }
 
 .home-image {
 	max-width: 600px;
-	grid-area: a;
-	margin-left: 200px; 
+	margin-left: 235px; 
 }
 
 .home-title {
@@ -54,7 +53,7 @@
 	color: #f9ffffe5;
 	display: flex;
 	max-width: 500px;
-	margin: auto;
+	margin-left: 75px;
 }
 
 .tools-title {
@@ -62,9 +61,6 @@
 }
 
 @media (max-width: 500px) {
-	.home-textbox {
-		
-	}
 	.home-text {
         margin-right: 10px;
         margin-left: 10px; 
@@ -72,7 +68,9 @@
 	.home-wrapper {
 		display: flex;
 		flex-direction: column;
-		border: 2px solid red; 
+	}
+	.text-box-wrapper {
+		margin: auto;
 	}
 }
 
@@ -80,6 +78,7 @@
 	.home-wrapper {
 		display: flex;
 		flex-direction: column;
+		height: 800px;
 	}
 	.home-image {
 		margin-top: 10px;
@@ -90,6 +89,7 @@
 		padding: 15px;
 		margin-right: 10px;
 		margin-left: 10px;
+		width: 400px;
 	}
 	.home-text,
 	.home-title
@@ -99,8 +99,11 @@
 	.home-title {
 		margin-left: 10px;
 	}
-	.home-text-outside {
-		margin-left: 10px;
-		line-height: 1%;
+	.home-image {
+		margin: auto;
+	}
+	.home-tools {
+		margin-left: 50px;
+		width: 400px;
 	}
 }

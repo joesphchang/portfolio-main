@@ -1,0 +1,24 @@
+.main-form {
+    display: flex;
+    color: #f9ffffe5;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto; 
+    margin-top: 50px;
+    padding: 5px;
+    border: 1px solid red; 
+    height: 690px;
+}
+
+.form-title {
+    color: #f9ffffe5;
+}
+
+.anchor-email {
+    text-decoration: none;
+    color: #5E6C76;
+}
+
+.span-email {
+    margin-top: 25px;
+}

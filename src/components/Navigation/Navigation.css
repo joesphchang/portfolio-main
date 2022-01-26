@@ -9,6 +9,7 @@ li a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 5px;
 }
 
 .header {
@@ -16,6 +17,7 @@ li a {
 }
 
 .header__nav {
+	line-height: 1px;
 }
 
 .header__text {
@@ -29,13 +31,20 @@ li a {
     text-decoration: none;
 }
 
+.anchor-resume {
+	text-decoration: none;
+	color: #F9FFFFE5; 
+}
+
 
 @media (max-width: 500px) {
 	.name-link {
+		font-size: large;
 	}
 	.header__text {
 		/* border: 2px solid red;  */
 		display: inline-block; 
+		font-size: large;
 	}
 }
 

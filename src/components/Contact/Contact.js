@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 function Contact(props) {
 	  const form = useRef();
@@ -25,7 +26,10 @@ function Contact(props) {
 		};
 
 		return (
-			<form ref={form} onSubmit={sendEmail}>
+			<div>
+				<h2 className='form-title'>Contact</h2>
+			<form ref={form} onSubmit={sendEmail}> 
+			<div className='main-form'>
 				<label>Name</label>
 				<input type='text' name='user_name' />
 				<label>Email</label>
@@ -33,7 +37,10 @@ function Contact(props) {
 				<label>Message</label>
 				<textarea name='message' />
 				<input type='submit' value='Send' />
+				<span className='span-email'>You can also email me @ <a href="mailto:joesphschang@gmail.com" rel="noopener noreferrer" target="_blank" className='anchor-email'>joesphschang@gmail.com</a></span>
+			</div>
 			</form>
+			</div>
 		);
 }
 
