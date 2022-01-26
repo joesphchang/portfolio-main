@@ -52,8 +52,8 @@
 .home-tools {
 	color: #f9ffffe5;
 	display: flex;
-	max-width: 500px;
-	margin-left: 75px;
+	max-width: 450px;
+	margin-left: 100px;
 }
 
 .tools-title {

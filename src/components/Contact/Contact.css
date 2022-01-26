@@ -6,7 +6,6 @@
     margin: auto; 
     margin-top: 50px;
     padding: 5px;
-    border: 1px solid red; 
     height: 690px;
 }
 
@@ -17,6 +16,10 @@
 .anchor-email {
     text-decoration: none;
     color: #5E6C76;
+}
+
+.anchor-email:hover {
+    color: #f9ffffe5;
 }
 
 .span-email {
