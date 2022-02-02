@@ -1,19 +1,22 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { init } from '@emailjs/browser';
+import image from '../assets/contact-image.jpg';
 import './Contact.css';
 
 function Contact(props) {
 	  const form = useRef();
+	  init('user_VYIsbxWvtTSOtRNEBLSol');
 
 		const sendEmail = (e) => {
 			e.preventDefault();
 
 			emailjs
 				.sendForm(
-					'YOUR_SERVICE_ID',
-					'YOUR_TEMPLATE_ID',
+					'service_21en2lr',
+					'template_zwy52a7',
 					form.current,
-					'YOUR_USER_ID'
+					'user_VYIsbxWvtTSOtRNEBLSol'
 				)
 				.then(
 					(result) => {
@@ -23,21 +26,23 @@ function Contact(props) {
 						console.log(error.text);
 					}
 				);
+				e.target.reset();
 		};
 
 		return (
-			<div>
-				<h2 className='form-title'>Contact</h2>
+			<div className='form-wrapper'>
+				<img className='contact-image' src={image} alt='contact'/>
 			<form ref={form} onSubmit={sendEmail}> 
 			<div className='main-form'>
+				<h2 className='form-title'>Contact</h2>
 				<label>Name</label>
-				<input type='text' name='user_name' />
+				<input type='text' name='user_name' className='form-name'/>
 				<label>Email</label>
-				<input type='email' name='user_email' />
+				<input type='email' name='user_email' className='form-email' />
 				<label>Message</label>
-				<textarea name='message' />
-				<input type='submit' value='Send' />
-				<span className='span-email'>You can also email me @ <a href="mailto:joesphschang@gmail.com" rel="noopener noreferrer" target="_blank" className='anchor-email'>joesphschang@gmail.com</a></span>
+				<textarea name='message' className='message-box'/>
+				<input type='submit' value='Send' className='submit-btn' />
+				<span>Let's get connected!</span>
 			</div>
 			</form>
 			</div>

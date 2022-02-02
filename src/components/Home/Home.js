@@ -25,7 +25,7 @@ function Home(props) {
 				</div>
 				<div className='home-tools'>
 					<h3 align='left' className='tools-title'>
-						Languages and Tools:
+						Skills & Tools:
 					</h3>
 					<p align='left'>
 						{' '}
