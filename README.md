@@ -20,6 +20,8 @@ https://jojos-portfolio.herokuapp.com/api/portfolios
 
 ## Link to the website
 
+https://joeychang.netlify.app/
+
 ## Wireframes
 
 ![PORTFOLIO](src/components/assets/Portfolio.png)
