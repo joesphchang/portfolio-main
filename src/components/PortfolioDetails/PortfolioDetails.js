@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import './PortfolioDetails.css';
 import axios from 'axios';
-import { getNextKeyDef } from '@testing-library/user-event/dist/keyboard/getNextKeyDef';
 
 function PortfolioDetails(props) {
 	const [details, setDetails] = useState(null);
