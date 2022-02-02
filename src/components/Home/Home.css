@@ -1,7 +1,7 @@
 .home-wrapper {
 	display: flex;
 	flex-direction: row;
-	height: 800px;
+	height: calc(100vh - 170px);
 	flex-wrap: nowrap;
 	flex-basis: auto;
 	align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .text-box-wrapper {
-	margin-right: 20px; 
+	margin-right: 100px; 
 	margin-left: 50px;
 }
 
@@ -41,19 +41,20 @@
 }
 
 .home-image {
-	max-width: 600px;
+	max-width: 575px;
 	margin-left: 235px; 
 }
 
 .home-title {
 	margin: auto;
+	margin-bottom: 5px;
 }
 
 .home-tools {
 	color: #f9ffffe5;
 	display: flex;
-	max-width: 500px;
-	margin-left: 75px;
+	max-width: 400px;
+	margin-left: 100px;
 }
 
 .tools-title {
@@ -62,8 +63,10 @@
 
 @media (max-width: 500px) {
 	.home-text {
-        margin-right: 10px;
-        margin-left: 10px; 
+		margin: auto;
+        /* margin-right: 10px;
+        margin-left: 10px;  */
+		
 	}
 	.home-wrapper {
 		display: flex;
@@ -87,8 +90,9 @@
 	.home-text {
 		font-size: 90%;
 		padding: 15px;
-		margin-right: 10px;
-		margin-left: 10px;
+		margin: auto;
+		/* margin-right: 10px;
+		margin-left: 10px; */
 		width: 400px;
 	}
 	.home-text,

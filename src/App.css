@@ -13,11 +13,9 @@ li {
 
 .icons img {
 	object-fit: cover;
-	max-width: 3%;
+	max-width: 2%;
 }
 
-.main-footer {
-}
 
 @media (max-width: 500px) {
 	.home-text {
@@ -28,14 +26,14 @@ li {
 		max-width: 5%;
 	}
 	.main-footer {
-		margin-top: 10px; 
+		margin-top: 5px; 
 	}
 }
 
 @media (max-width: 900px) {
 	.main-footer {
 		display: flex;
-		margin-top: 95px;
+		margin-top: 85px;
 		flex-direction: column;
 		justify-content: center;
 	}

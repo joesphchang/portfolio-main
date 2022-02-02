@@ -29,21 +29,21 @@ function App() {
 			</div>
 			<footer>
 				<div className='main-footer'>
-				<h4 className='main-title'>Website by Joey Chang</h4>
-				<div className='icons'>
-				<a
-					href='https://www.linkedin.com/in/joesphchang/'
-					target='_blank'
-					rel='noopener noreferrer'>
-					<img src={LinkedIn} />
-				</a>
-				<a
-					href='https://github.com/joesphchang'
-					target='_blank'
-					rel='noopener noreferrer'>
-					<img src={GitHub} />
-				</a>
-				</div>
+					<h4 className='main-title'>Website by Joey Chang</h4>
+					<div className='icons'>
+						<a
+							href='https://www.linkedin.com/in/joesphchang/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<img src={LinkedIn} />
+						</a>
+						<a
+							href='https://github.com/joesphchang'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<img src={GitHub} />
+						</a>
+					</div>
 				</div>
 			</footer>
 		</div>

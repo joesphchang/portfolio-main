@@ -4,12 +4,16 @@ li a {
     cursor: pointer; 
 }
 
+li a:hover {
+	color: rgba( 187, 26, 23, 100%);
+}
+
 .header,
 .header__nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .header {
@@ -20,13 +24,14 @@ li a {
 	line-height: 1px;
 }
 
+
 .header__text {
 	display: inline-block;
 	margin-right: 1em;
 }
 
 .name-link {
-    font-size: xx-large;
+	font-size: xx-large;
     color: #F9FFFFE5; 
     text-decoration: none;
 }
@@ -34,6 +39,10 @@ li a {
 .anchor-resume {
 	text-decoration: none;
 	color: #F9FFFFE5; 
+}
+
+.anchor-resume:hover {
+	color: rgba( 187, 26, 23, 100%);
 }
 
 
