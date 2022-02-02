@@ -2,10 +2,12 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { init } from '@emailjs/browser';
 import image from '../assets/contact-image.jpg';
+import { useState } from 'react';
 import './Contact.css';
 
 function Contact(props) {
-	  const form = useRef();
+	const [message, setMessage] = useState('');
+	  const form = useRef(); 
 	  init('user_VYIsbxWvtTSOtRNEBLSol');
 
 		const sendEmail = (e) => {
@@ -26,6 +28,7 @@ function Contact(props) {
 						console.log(error.text);
 					}
 				);
+				setMessage('Thank you for contacting me, I cannot wait to get connected!')
 				e.target.reset();
 		};
 
@@ -42,7 +45,7 @@ function Contact(props) {
 				<label>Message</label>
 				<textarea name='message' className='message-box'/>
 				<input type='submit' value='Send' className='submit-btn' />
-				<span>Let's get connected!</span>
+				{message}
 			</div>
 			</form>
 			</div>
